@@ -16,4 +16,6 @@ app.get("/", (req, res) => {
   res.send("nodejs filesystem");
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log(`server started at ${PORT}`)
+});
